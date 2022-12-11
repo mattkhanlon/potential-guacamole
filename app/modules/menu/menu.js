@@ -1,0 +1,1 @@
+const configPath = "../../configs/menu/"

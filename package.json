@@ -1,0 +1,5 @@
+{
+  "devDependencies": {
+    "electron-react-devtools": "^0.5.3"
+  }
+}
