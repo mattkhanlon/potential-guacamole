@@ -26,7 +26,7 @@ function initialize() {
             // communicate between node-land and browser-land.
             webPreferences: {
                 preload: path.join(__dirname, "preload.js"),
-                nodeIntegration: true,
+                nodeIntegration: true
             },
         });
 

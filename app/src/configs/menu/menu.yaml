@@ -1,7 +1,0 @@
-structure:
-  parent:
-    name: "File"
-    child-items:
-      item:
-        name: "Exit",
-        Action: "Do something"

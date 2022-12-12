@@ -1,17 +1,17 @@
-const { ipcMain, Notification } = require('electron')
+// REQUIRES
 
-const NOTIFICATION_TITLE = 'Notification'
-const NOTIFICATION_BODY = 'We heard you.'
-
-ipcMain.on('menu-clicked', (event) => {
-    console.log("Recieved")
-    showNotification();
-})
+import menu from '../src/renderer/menu/menu';
 
 
-function showNotification() {
-    new Notification({ title: NOTIFICATION_TITLE, body: NOTIFICATION_BODY }).show()
-}
+
+
+
+
+
+
+
+
+
 
 //  DEBUG  ###################################################################
 //############################################################################
@@ -21,4 +21,4 @@ function showNotification() {
 function DebugInfo(filename) {
     console.log("Loading: " + filename)
 }
-DebugInfo("Module - Menu");
+DebugInfo("Main Renderer");

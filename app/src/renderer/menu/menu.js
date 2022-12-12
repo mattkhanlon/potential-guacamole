@@ -1,17 +1,14 @@
-const { ipcMain, Notification } = require('electron')
+//###########################################################
+//###########################################################
+const ipcRend = etron.ipcRenderer()
 
-const NOTIFICATION_TITLE = 'Notification'
-const NOTIFICATION_BODY = 'We heard you.'
-
-ipcMain.on('menu-clicked', (event) => {
-    console.log("Recieved")
-    showNotification();
+// Tell main process to show the menu when demo button is clicked
+const menuBtn = document.getElementById("file-button");
+menuBtn.addEventListener('click', () => {
+    console.log("clicked");
+    ipcRend.send('menu-clicked');
 })
 
-
-function showNotification() {
-    new Notification({ title: NOTIFICATION_TITLE, body: NOTIFICATION_BODY }).show()
-}
 
 //  DEBUG  ###################################################################
 //############################################################################
@@ -21,4 +18,4 @@ function showNotification() {
 function DebugInfo(filename) {
     console.log("Loading: " + filename)
 }
-DebugInfo("Module - Menu");
+DebugInfo("Renderer - Menu");
