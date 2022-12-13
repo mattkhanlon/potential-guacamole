@@ -11,6 +11,8 @@ function App() {
           <img src={logo} className="App-logo" alt="logo" />
         </header>
       </div>
+
+      <script src="./renderer.js"></script>
     </>
   );
 }

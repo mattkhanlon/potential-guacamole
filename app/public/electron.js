@@ -15,18 +15,17 @@ function initialize() {
     // Create the native browser window.
     function createWindow() {
         const win = new BrowserWindow({
-            width: 600,
+            width: 1200,
             height: 900,
             show: false,
             backgroundColor: '#282c34',
-            x: -1920,
+            x: -1620,
             y: 200,
             frame: false,
             // Set the path of an additional "preload" script that can be used to
             // communicate between node-land and browser-land.
             webPreferences: {
-                preload: path.join(__dirname, "preload.js"),
-                nodeIntegration: true
+                preload: path.join(__dirname, "preload.js")
             },
         });
 

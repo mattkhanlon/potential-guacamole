@@ -1,14 +1,14 @@
 import React from 'react';
+import ScriptTag from 'react-script-tag';
 import '../../assets/css/menu/menu.css';
+import MenuBar from '../../assets/views/menu/menu.js';
 
 function Menu() {
-    return (
+    return ( 
         <>
-            <div id="app-menu">
-                <button id="file-button">File</button>
-            </div>
-        </>
-    );
+            <MenuBar /> 
+            <ScriptTag type="text/javascript" src="../../renderer/menu/menu.js" />
+        </>);
 }
 
 export default Menu;

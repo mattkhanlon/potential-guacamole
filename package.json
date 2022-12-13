@@ -1,5 +1,7 @@
 {
   "devDependencies": {
-    "electron-react-devtools": "^0.5.3"
+    "@babel/runtime": "7.0.0-beta.55",
+    "electron-react-devtools": "^0.5.3",
+    "react-script-tag": "^1.1.2"
   }
 }

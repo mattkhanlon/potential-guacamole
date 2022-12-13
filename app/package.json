@@ -45,7 +45,8 @@
     "electron": "^22.0.0",
     "electron-builder": "^23.6.0",
     "electronmon": "^2.0.2",
-    "wait-on": "^6.0.1"
+    "wait-on": "^6.0.1",
+    "@babel/runtime": "^7.20.6"
   },
   "build": {
     "appId": "com.electron.myapp",
@@ -55,7 +56,9 @@
       "node_modules/**/*",
       "modules/**/*",
       "views/**/*",
-      "assets/**/*"
+      "assets/**/*",
+      "components/**/*",
+      "renderer/**/*"
     ],
     "directories": {
       "buildResources": "public"

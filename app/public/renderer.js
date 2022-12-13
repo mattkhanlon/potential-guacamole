@@ -1,9 +1,5 @@
 // REQUIRES
 
-import menu from '../src/renderer/menu/menu';
-
-
-
 
 
 
